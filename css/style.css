@@ -1,0 +1,408 @@
+/* Global Styles */
+:root {
+	--mainColor: #ff8013;
+	--White: #fff;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+body {
+	-ms-overflow-style: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Sections Styles */
+
+/* Header */
+header {
+	background-image: url(../img/banner2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+header nav {
+	background-color: rgba(255, 255, 255, 0.02);
+}
+
+header nav .nav-icon {
+	color: #fff !important;
+}
+
+header nav ul li a {
+	font-weight: 600;
+	color: #fff !important;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+header nav ul li a:hover {
+	color: #ff8013 !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+	background-color: rgba(255, 255, 255, 0.05);
+	border-radius: 3px;
+	outline: none;
+}
+
+.banner {
+	height: calc(100vh - 74px);
+}
+
+.banner-content {
+	position: relative;
+	width: 25rem;
+}
+
+.banner-content h1::before {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 45%;
+	top: 0px;
+	left: -20px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: var(--mainColor) transparent transparent var(--mainColor);
+}
+
+.banner-content h1::after {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 45%;
+	bottom: -10px;
+	right: 25px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent var(--mainColor) var(--mainColor) transparent;
+}
+
+.banner h1 {
+	font-size: 4rem;
+	position: relative;
+}
+
+.banner .banner-btns a {
+	border: 1px solid var(--mainColor);
+	font-size: 1.5rem;
+}
+
+.banner .banner-btns a:hover {
+	color: #ff8013 !important;
+	border: 1px solid var(--White);
+}
+
+/* Members */
+.members-content {
+	background-image: url(../img/about-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.members-content h4 {
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.members-content h2 {
+	font-size: 3rem;
+	color: var(--mainColor);
+	font-weight: 700;
+}
+
+.members-content h4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+/* about us */
+#about-us {
+	background-image: url(../img/about-us-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#about-us h2 {
+	font-size: 3rem;
+	color: var(--mainColor);
+	font-weight: 700;
+}
+
+#about-us a {
+	border: 1px solid var(--mainColor);
+	font-size: 1.5rem;
+}
+
+#about-us a:hover {
+	color: #ff8013 !important;
+	border: 1px solid var(--White);
+}
+
+/* content box */
+.content-box {
+	background-color: #464646;
+}
+
+.content-box .pr-0 img {
+	width: 100%;
+	margin-top: -132px;
+}
+
+.content-box .pl-0 img {
+	width: 100%;
+}
+
+.img-overlay {
+	position: absolute;
+	top: 35%;
+	text-align: center;
+	right: 0;
+	left: 0;
+	padding: 1.25rem;
+}
+
+/* Trainers */
+#trainers {
+	position: relative;
+	background-image: url(../img/gym2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #000;
+	padding: 50px 0;
+	margin: 70px 0;
+}
+
+#trainers::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1rem;
+	background-color: #ff8013;
+	top: 0;
+	left: 0;
+}
+
+#trainers::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1rem;
+	background-color: #ff8013;
+	bottom: 0;
+	left: 0;
+}
+
+#trainers h2 {
+	color: #ff8013;
+	font-size: 3rem;
+}
+
+#trainers .card {
+	text-align: center;
+	background-color: transparent;
+}
+
+#trainers .card img {
+	min-width: 250px;
+	min-height: 250px;
+	margin: 0 auto;
+}
+
+#trainers .card .card-body {
+	position: relative;
+	border-radius: 20px;
+	background-color: var(--White);
+	margin: 30px 0;
+	padding: 30px 0;
+}
+
+#trainers .card .card-body::after {
+	content: "";
+	position: absolute;
+	top: -19px;
+	left: 48%;
+	border-style: solid;
+	border-width: 10px;
+	border-color: transparent transparent #fff transparent;
+}
+
+/* Gellary */
+#gallery {
+	padding-bottom: 100px;
+}
+
+#gallery .card {
+	border: none;
+	background-color: transparent;
+}
+
+#gallery .card img {
+	width: 100%;
+}
+
+#gallery .card .card-body {
+	background-color: var(--mainColor);
+}
+
+/* Contact us */
+#contact-us {
+	background-color: #000;
+}
+
+#contact-us ul {
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+#contact-us li i {
+	color: #fff;
+	font-size: 1.5rem;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#contact-us li i:hover {
+	color: var(--mainColor);
+}
+
+#contact-us form {
+	padding: 4rem 3rem;
+}
+
+#contact-us form h2 {
+	color: var(--mainColor);
+}
+
+#contact-us .form-upper input:first-child {
+	margin-right: 2%;
+}
+
+#contact-us form input::placeholder {
+	color: #000;
+	letter-spacing: 1px;
+}
+
+#contact-us form input:not([type="submit"]) {
+	outline: none;
+	border: none;
+	border-bottom: 3px solid #000;
+	padding: 10px 0;
+}
+
+#contact-us form input:not([type="submit"]):focus {
+	border-bottom: 3px solid var(--mainColor);
+}
+
+#contact-us form input[type="submit"] {
+	color: #fff;
+	background-color: #000;
+	font-size: 1.2rem;
+	font-weight: 500;
+	border: none;
+	outline: none;
+	padding: .5rem .75rem;
+	letter-spacing: 1px;
+}
+
+#contact-us form input[type="submit"]:hover {
+	background-color: rgba(0, 0, 0, .9);
+}
+
+#contact-us .form-upper input {
+	width: 48%;
+}
+
+/* Media Query */
+@media (max-width: 1199px) {
+	.content-box .pr-0 img {
+		margin-top: -115px;
+	}
+}
+
+@media (max-width: 991px) {
+	.content-box .pr-0 img {
+		margin-top: -82px;
+	}
+}
+
+@media (max-width: 767px) {
+	.content-box .pr-0 img {
+		margin: 20px 0;
+	}
+
+	.content-box .pl-0 img {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 576px) {
+	.img-overlay {
+		top: -10%;
+	}
+
+	.banner-content {
+		width: 18.5rem;
+	}
+
+	.banner h1 {
+		font-size: 2.9rem;
+	}
+
+	.banner .banner-btns a {
+		font-size: 1.1rem;
+	}
+
+	.img-overlay p {
+		font-size: .8rem;
+	}
+
+	#trainers .card img {
+		min-width: 150px;
+		min-height: 150px;
+		margin: 0 auto;
+	}
+
+	#gallery .col-md-4 {
+		margin-bottom: 1.5rem;
+	}
+
+	#contact-us form {
+		padding: 2rem .5rem;
+	}
+
+	#contact-us form input[type="submit"] {
+		display: block;
+		font-size: 1rem;
+		padding: .5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.img-container {
+		margin-top: -80px !important;
+	}
+
+	#contact-us form {
+		margin-top: -50px;
+	}
+}
